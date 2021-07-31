@@ -19,7 +19,7 @@ public class CurrencyController {
     CurrencyService currencyService;
     @PostMapping
     public Result addCurrency(@RequestBody Currency currency){
-        Result result = currencyService.addcurrencyService(currency);
+        Result result = currencyService.addCurrencyService(currency);
         return  result;
     }
     @GetMapping("getById/{id}")
@@ -37,7 +37,7 @@ public class CurrencyController {
         Result result = currencyService.deleteCurrency(id);
         return result;
     }
-    @PutMapping("editMeasuremnent/{id}")
+    @PutMapping("editSupplier/{id}")
     public Result edit(@PathVariable Integer id,@RequestBody Currency currency){
         Result result = currencyService.editCurrency(id, currency);
         return result;

@@ -19,7 +19,7 @@ public class CurrencyService {
     @Autowired
     CurrencyRepository currencyRepository;
 
-    public Result addcurrencyService(Currency currency){
+    public Result addCurrencyService(Currency currency){
         boolean existsByName = currencyRepository.existsByName(currency.getName());
         if (existsByName)
             return new Result("such currency is exist",false);
