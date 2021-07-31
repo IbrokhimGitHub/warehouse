@@ -43,6 +43,9 @@ public class ProductService {
         if (!optionalMeasurement.isPresent()) {
             return  new Result("such measurement is not exist",false);
         }
+        if (!optionalMeasurement.get().isActive()) {
+            return  new Result("measurement right now deactivated",false);
+        }
 
 
         Product product = new Product();
