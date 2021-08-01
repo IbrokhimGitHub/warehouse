@@ -15,6 +15,8 @@ public class UserDto {
     private String phoneNumber;
     private String password;
     private Set<Integer> warehousesId;
+    private String newPhoneNumber;
+    private String newPassword;
 
 
 }
