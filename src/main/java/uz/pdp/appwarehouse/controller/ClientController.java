@@ -3,7 +3,6 @@ package uz.pdp.appwarehouse.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
-import sun.misc.Cleaner;
 import uz.pdp.appwarehouse.entity.Client;
 import uz.pdp.appwarehouse.payload.ClientResult;
 import uz.pdp.appwarehouse.payload.Result;
@@ -14,6 +13,7 @@ import uz.pdp.appwarehouse.service.ClientService;
 public class ClientController {
     @Autowired
     ClientService clientService;
+
     @PostMapping("add")
     public Result add(@RequestBody Client client){
         return clientService.add(client);

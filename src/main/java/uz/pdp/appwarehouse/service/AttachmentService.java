@@ -10,9 +10,8 @@ import uz.pdp.appwarehouse.entity.AttachmentContent;
 import uz.pdp.appwarehouse.payload.Result;
 import uz.pdp.appwarehouse.respository.AttachmentContentRepository;
 import uz.pdp.appwarehouse.respository.AttachmentRepository;
-
-import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
 
 @Service
 public class AttachmentService {
@@ -24,19 +23,39 @@ public class AttachmentService {
     @SneakyThrows
     public Result uploadFile(MultipartHttpServletRequest request)  {
         Iterator<String> fileNames = request.getFileNames();
-        MultipartFile file = request.getFile(fileNames.next());
-        Attachment attachment=new Attachment();
-        attachment.setName(file.getName());
-        attachment.setContentType(file.getContentType());
-        attachment.setSize(file.getSize());
-        Attachment savedAttachment = attachmentRepository.save(attachment);
+        List<MultipartFile> files = request.getFiles(fileNames.next());
+        String returnerStr="";
+        boolean bool=false;
+        for (MultipartFile multipartFile : files) {
 
 
-        AttachmentContent attachmentContent=new AttachmentContent();
-        attachmentContent.setBytes(file.getBytes());
-        attachmentContent.setAttachment(savedAttachment);
-        attachmentContentRepository.save(attachmentContent);
-        return new Result("File uploaded",true,savedAttachment.getId());
+            if (multipartFile != null) {
+                String originalFilename = multipartFile.getOriginalFilename();
+                long size = multipartFile.getSize();
+                String contentType = multipartFile.getContentType();
+                Attachment attachment = new Attachment();
+                attachment.setContentType(contentType);
+                attachment.setName(originalFilename);
+                attachment.setSize(size);
+                Attachment savedAttachment = attachmentRepository.save(attachment);
+
+                AttachmentContent attachmentContent = new AttachmentContent();
+                attachmentContent.setAttachment(savedAttachment);
+                attachmentContent.setBytes(multipartFile.getBytes());
+                attachmentContentRepository.save(attachmentContent);
+                returnerStr+="file saved. ID : " + savedAttachment.getId();
+                bool=true;
+            }
+        }
+        if (bool) {
+            return new Result(returnerStr,true);
+        }else {
+            return new Result("something went wrong, file not saved",false);
+        }
+
 
     }
+
+
+
 }
