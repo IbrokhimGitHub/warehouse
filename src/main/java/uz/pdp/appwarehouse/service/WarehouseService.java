@@ -1,13 +1,12 @@
 package uz.pdp.appwarehouse.service;
 
-import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uz.pdp.appwarehouse.entity.Warehouse;
 
 
-import uz.pdp.appwarehouse.payload.WarehouseResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.WarehouseResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.WarehouseRepository;
 
 import java.util.List;

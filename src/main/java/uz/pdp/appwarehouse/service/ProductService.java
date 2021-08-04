@@ -7,7 +7,7 @@ import uz.pdp.appwarehouse.entity.Category;
 import uz.pdp.appwarehouse.entity.Measurement;
 import uz.pdp.appwarehouse.entity.Product;
 import uz.pdp.appwarehouse.payload.ProductDto;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.AttachmentRepository;
 import uz.pdp.appwarehouse.respository.CategoryRepository;
 import uz.pdp.appwarehouse.respository.MeasurementRepository;

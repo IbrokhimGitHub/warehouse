@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.Category;
 import uz.pdp.appwarehouse.payload.CategoryDto;
-import uz.pdp.appwarehouse.payload.CategoryResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.CategoryResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.CategoryService;
 
 import java.util.List;

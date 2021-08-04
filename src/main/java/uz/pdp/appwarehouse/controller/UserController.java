@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.User;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.payload.UserDto;
-import uz.pdp.appwarehouse.payload.UserResult;
+import uz.pdp.appwarehouse.result.UserResult;
 import uz.pdp.appwarehouse.service.UserService;
 
 @RestController

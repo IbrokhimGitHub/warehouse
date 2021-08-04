@@ -1,4 +1,4 @@
-package uz.pdp.appwarehouse.payload;
+package uz.pdp.appwarehouse.result;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

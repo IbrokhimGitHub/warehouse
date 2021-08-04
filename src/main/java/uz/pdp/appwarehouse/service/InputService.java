@@ -5,20 +5,18 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 import uz.pdp.appwarehouse.entity.Currency;
 import uz.pdp.appwarehouse.entity.Input;
 import uz.pdp.appwarehouse.entity.Supplier;
 import uz.pdp.appwarehouse.entity.Warehouse;
 import uz.pdp.appwarehouse.payload.InputDto;
-import uz.pdp.appwarehouse.payload.InputResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.InputResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.CurrencyRepository;
 import uz.pdp.appwarehouse.respository.InputRepository;
 import uz.pdp.appwarehouse.respository.SupplierRepository;
 import uz.pdp.appwarehouse.respository.WarehouseRepository;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.*;
 

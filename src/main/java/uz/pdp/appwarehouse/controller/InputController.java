@@ -5,8 +5,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.Input;
 import uz.pdp.appwarehouse.payload.InputDto;
-import uz.pdp.appwarehouse.payload.InputResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.InputResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.InputService;
 
 

@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import uz.pdp.appwarehouse.entity.Attachment;
 import uz.pdp.appwarehouse.entity.AttachmentContent;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.AttachmentContentRepository;
 import uz.pdp.appwarehouse.respository.AttachmentRepository;
 import java.util.Iterator;

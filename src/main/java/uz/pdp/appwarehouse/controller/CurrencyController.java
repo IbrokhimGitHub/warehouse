@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.Currency;
 
 
-import uz.pdp.appwarehouse.payload.CurrencyResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.CurrencyResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.CurrencyService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

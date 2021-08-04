@@ -3,8 +3,8 @@ package uz.pdp.appwarehouse.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.Measurement;
-import uz.pdp.appwarehouse.payload.MeasurementResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.MeasurementResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.MeasurementService;
 
 import java.util.List;

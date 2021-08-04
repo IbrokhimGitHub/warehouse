@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import uz.pdp.appwarehouse.payload.ProductDto;
-import uz.pdp.appwarehouse.payload.Result;
-import uz.pdp.appwarehouse.respository.ProductRepository;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.ProductService;
 
 @RestController

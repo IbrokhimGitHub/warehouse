@@ -1,14 +1,11 @@
 package uz.pdp.appwarehouse.service;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uz.pdp.appwarehouse.entity.Category;
 import uz.pdp.appwarehouse.payload.CategoryDto;
-import uz.pdp.appwarehouse.payload.CategoryResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.CategoryResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.CategoryRepository;
 
 import java.util.List;

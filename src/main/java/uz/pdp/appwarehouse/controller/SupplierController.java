@@ -5,7 +5,7 @@ import uz.pdp.appwarehouse.entity.Supplier;
 
 
 import uz.pdp.appwarehouse.payload.SupplierResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.SupplierService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

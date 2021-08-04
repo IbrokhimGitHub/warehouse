@@ -11,16 +11,13 @@ import uz.pdp.appwarehouse.entity.Input;
 import uz.pdp.appwarehouse.entity.InputProduct;
 import uz.pdp.appwarehouse.entity.Product;
 import uz.pdp.appwarehouse.payload.InputProductDto;
-import uz.pdp.appwarehouse.payload.InputProductResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.InputProductResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.InputProductRepository;
 import uz.pdp.appwarehouse.respository.InputRepository;
 import uz.pdp.appwarehouse.respository.ProductRepository;
 
 import java.sql.Timestamp;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Optional;
 
 

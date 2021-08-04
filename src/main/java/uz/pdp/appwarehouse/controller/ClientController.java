@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.Client;
-import uz.pdp.appwarehouse.payload.ClientResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.ClientResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.ClientService;
 
 @RestController

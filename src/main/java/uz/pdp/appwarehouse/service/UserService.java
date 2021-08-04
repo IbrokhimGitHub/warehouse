@@ -5,12 +5,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseBody;
 import uz.pdp.appwarehouse.entity.User;
 import uz.pdp.appwarehouse.entity.Warehouse;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.payload.UserDto;
-import uz.pdp.appwarehouse.payload.UserResult;
+import uz.pdp.appwarehouse.result.UserResult;
 import uz.pdp.appwarehouse.respository.UserRepository;
 import uz.pdp.appwarehouse.respository.WarehouseRepository;
 

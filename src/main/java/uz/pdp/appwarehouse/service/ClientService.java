@@ -6,11 +6,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import uz.pdp.appwarehouse.entity.Client;
-import uz.pdp.appwarehouse.payload.ClientResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.ClientResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.ClientRepository;
 
-import java.awt.image.RescaleOp;
 import java.util.Optional;
 
 @Service

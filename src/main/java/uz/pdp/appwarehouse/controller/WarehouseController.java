@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.*;
 import uz.pdp.appwarehouse.entity.Warehouse;
 
 
-import uz.pdp.appwarehouse.payload.WarehouseResult;
-import uz.pdp.appwarehouse.payload.Result;
+import uz.pdp.appwarehouse.result.WarehouseResult;
+import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.service.WarehouseService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
