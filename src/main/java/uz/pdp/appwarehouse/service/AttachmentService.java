@@ -10,8 +10,11 @@ import uz.pdp.appwarehouse.entity.AttachmentContent;
 import uz.pdp.appwarehouse.result.Result;
 import uz.pdp.appwarehouse.respository.AttachmentContentRepository;
 import uz.pdp.appwarehouse.respository.AttachmentRepository;
+
+import javax.servlet.http.HttpServletResponse;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AttachmentService {
@@ -55,6 +58,14 @@ public class AttachmentService {
 
 
     }
+//    public void downloadFile(Integer id, HttpServletResponse response){
+//        Optional<Attachment> optionalAttachment = attachmentRepository.findById(id);
+//        if (optionalAttachment.isPresent()) {
+//            Attachment attachment = optionalAttachment.get();
+//            List<AttachmentContent> attachmentContentByAttachment_id = attachmentContentRepository.getAttachmentContentByAttachment_Id(attachment.getId());
+//
+//        }
+//    }
 
 
 
